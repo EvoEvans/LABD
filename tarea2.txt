@@ -1,0 +1,48 @@
+CREATE TABLE ApartadosM(
+	idApartadosM int IDENTITY(1,1) PRIMARY KEY NOT NULL,
+	idApartado int NULL,
+	idProducto int NULL,
+	Cantidad int NULL
+)
+
+CREATE TABLE Inventario(
+	IdProducto int IDENTITY(1000,1)	PRIMARY KEY NOT NULL,
+	IdProveedor int NULL,
+	Modelo int NULL,
+	Color varchar(50) NULL,
+	Material varchar(50) NULL,
+	Marca varchar(50) NULL,
+	Talla float NULL,
+	PrecioCompra float NULL,
+	PrecioVenta float NULL,
+	CantidadExistente int NULL,
+	ImagenProducto image NULL
+	)
+
+CREATE TABLE Proveedores(
+	idProvedor int IDENTITY(1,1) PRIMARY KEY NOT NULL,
+	Nombre varchar(50) NULL,
+	RFC varchar(50) NULL,
+	Folio varchar(50) NULL,
+	Direccion varchar(50) NULL
+)
+
+CREATE TABLE SistemaApartado(
+	idApartado int IDENTITY(1,1) PRIMARY KEY NOT NULL,
+	idCliente int NULL,
+	Precio float NULL,
+	Enganche float NULL,
+	Debe float NULL
+)
+
+CREATE TABLE Cliente(
+	idCliente int IDENTITY(1000,1) PRIMARY KEY NOT NULL,
+	Nombre varchar(150) NULL,
+	ApPaterno varchar(150) NULL,
+	ApMaterno varchar(150) NULL,
+	Telefono varchar(50) NULL,
+	Calle varchar(150) NULL,
+	Numero varchar(50) NULL,
+	CodigoPostal varchar(50) NULL,
+	Colonia varchar(150) NULL
+)

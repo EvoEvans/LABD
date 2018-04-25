@@ -1,0 +1,90 @@
+
+INSERT INTO ApartadosM ([idApartadosM], [idApartado], [idProducto], [Cantidad]) VALUES (4, 2, 1000, 1)
+INSERT INTO ApartadosM ([idApartadosM], [idApartado], [idProducto], [Cantidad]) VALUES (6, 3, 1000, 1)
+INSERT INTO ApartadosM ([idApartadosM], [idApartado], [idProducto], [Cantidad]) VALUES (7, 4, 1000, 1)
+INSERT INTO ApartadosM ([idApartadosM], [idApartado], [idProducto], [Cantidad]) VALUES (8, 5, 1002, 1)
+INSERT INTO ApartadosM ([idApartadosM], [idApartado], [idProducto], [Cantidad]) VALUES (9, 6, 1009, 1)
+INSERT INTO ApartadosM ([idApartadosM], [idApartado], [idProducto], [Cantidad]) VALUES (10, 3, 1008, 1)
+INSERT INTO ApartadosM ([idApartadosM], [idApartado], [idProducto], [Cantidad]) VALUES (11, 8, 1005, 1)
+INSERT INTO ApartadosM ([idApartadosM], [idApartado], [idProducto], [Cantidad]) VALUES (12, 9, 1004, 1)
+INSERT INTO ApartadosM ([idApartadosM], [idApartado], [idProducto], [Cantidad]) VALUES (13, 10, 1006, 1)
+INSERT INTO ApartadosM ([idApartadosM], [idApartado], [idProducto], [Cantidad]) VALUES (14, 11, 1002, 5)
+
+INSERT INTO Cliente ([idCliente], [Nombre], [ApPaterno], [ApMaterno], [Telefono], [Calle], [Numero], [CodigoPostal], [Colonia]) VALUES (1000, N'Matt', N'Loco', N'Bellamy', N'561', N'London', N'13244', N'65465', N'Muse')
+INSERT INTO Cliente ([idCliente], [Nombre], [ApPaterno], [ApMaterno], [Telefono], [Calle], [Numero], [CodigoPostal], [Colonia]) VALUES (1001, N'Irvin Eliud', N'Garcia', N'Perez', N'12345', N'Motorama', N'13', N'23456', N'Rusia')
+INSERT INTO Cliente ([idCliente], [Nombre], [ApPaterno], [ApMaterno], [Telefono], [Calle], [Numero], [CodigoPostal], [Colonia]) VALUES (1002, N'Leon', N'Casas', N'Venados', N'1345', N'Anaranjado', N'23435', N'345', N'Locacion')
+INSERT INTO Cliente ([idCliente], [Nombre], [ApPaterno], [ApMaterno], [Telefono], [Calle], [Numero], [CodigoPostal], [Colonia]) VALUES (1003, N'Juan', N'Armijo', N'Bosques', N'12345', N'Alocados', N'234', N'324', N'Calanos')
+INSERT INTO Cliente ([idCliente], [Nombre], [ApPaterno], [ApMaterno], [Telefono], [Calle], [Numero], [CodigoPostal], [Colonia]) VALUES (1004, N'Angel', N'Pacheco', N'Mazuca', N'1111111111111', N'ASOCIADOS', N'554', N'13221', N'Colanos')
+INSERT INTO Cliente ([idCliente], [Nombre], [ApPaterno], [ApMaterno], [Telefono], [Calle], [Numero], [CodigoPostal], [Colonia]) VALUES (1005, N'Nicolas', N'Oscar', N'Flores', N'111111551111', N'Callosa', N'544', N'1321', N'Colonos')
+INSERT INTO Cliente ([idCliente], [Nombre], [ApPaterno], [ApMaterno], [Telefono], [Calle], [Numero], [CodigoPostal], [Colonia]) VALUES (1006, N'Chris', N'Pacheco', N'Maca', N'191', N'London', N'123444', N'666', N'Muse')
+INSERT INTO Cliente ([idCliente], [Nombre], [ApPaterno], [ApMaterno], [Telefono], [Calle], [Numero], [CodigoPostal], [Colonia]) VALUES (1007, N'Gerard', N'Arthur', N'Way', N'21', N'LA', N'5466', N'1321', N'MCR')
+INSERT INTO Cliente ([idCliente], [Nombre], [ApPaterno], [ApMaterno], [Telefono], [Calle], [Numero], [CodigoPostal], [Colonia]) VALUES (1008, N'H', N'P', N'Lovecraft', N'666666666', N'London', N'56565', N'232323', N'Cuthulu')
+INSERT INTO Cliente ([idCliente], [Nombre], [ApPaterno], [ApMaterno], [Telefono], [Calle], [Numero], [CodigoPostal], [Colonia]) VALUES (1009, N'Alberto', N'Missael', N'Granados', N'34367798', N'Apodaca', N'65656', N'1321', N'Apodaca')
+
+INSERT INTO Inventario ([IdProducto], [IdProveedor], [Modelo], [Color], [Material], [Marca], [Talla], [PrecioCompra], [PrecioVenta], [CantidadExistente], [ImagenProducto]) VALUES (1000, 1, 101, N'Blanco', N'Cuero', N'Principe', 10, 50, 200, 31, NULL)
+INSERT INTO Inventario ([IdProducto], [IdProveedor], [Modelo], [Color], [Material], [Marca], [Talla], [PrecioCompra], [PrecioVenta], [CantidadExistente], [ImagenProducto]) VALUES (1001, 2, 102, N'Azul', N'Sintético', N'Andrea', 6, 400, 450, 0, NULL)
+INSERT INTO Inventario ([IdProducto], [IdProveedor], [Modelo], [Color], [Material], [Marca], [Talla], [PrecioCompra], [PrecioVenta], [CantidadExistente], [ImagenProducto]) VALUES (1002, 1, 103, N'Gris', N'Sintético', N'Andrea', 4, 400, 600, 0, NULL)
+INSERT INTO Inventario ([IdProducto], [IdProveedor], [Modelo], [Color], [Material], [Marca], [Talla], [PrecioCompra], [PrecioVenta], [CantidadExistente], [ImagenProducto]) VALUES (1003, 2, 104, N'Azul', N'Plástico', N'Flexi', 8, 500, 1000, 11, NULL)
+INSERT INTO Inventario ([IdProducto], [IdProveedor], [Modelo], [Color], [Material], [Marca], [Talla], [PrecioCompra], [PrecioVenta], [CantidadExistente], [ImagenProducto]) VALUES (1004, 1, 105, N'Negro', N'Sintético', N'Flexi', 7, 750, 900, 8, NULL)
+INSERT INTO Inventario ([IdProducto], [IdProveedor], [Modelo], [Color], [Material], [Marca], [Talla], [PrecioCompra], [PrecioVenta], [CantidadExistente], [ImagenProducto]) VALUES (1005, 2, 106, N'Café', N'Plástico', N'Flexi', 9, 800, 1200, 5, NULL)
+INSERT INTO Inventario ([IdProducto], [IdProveedor], [Modelo], [Color], [Material], [Marca], [Talla], [PrecioCompra], [PrecioVenta], [CantidadExistente], [ImagenProducto]) VALUES (1006, 1, 107, N'Negro', N'Piel', N'Flexi', 10, 1000, 1500, 14, NULL)
+INSERT INTO Inventario ([IdProducto], [IdProveedor], [Modelo], [Color], [Material], [Marca], [Talla], [PrecioCompra], [PrecioVenta], [CantidadExistente], [ImagenProducto]) VALUES (1007, 2, 108, N'Azul', N'Piel', N'Flexi', 11, 1500, 2000, 13, NULL)
+INSERT INTO Inventario ([IdProducto], [IdProveedor], [Modelo], [Color], [Material], [Marca], [Talla], [PrecioCompra], [PrecioVenta], [CantidadExistente], [ImagenProducto]) VALUES (1008, 1, 109, N'Café Oscuro', N'Piel', N'Flexi', 12, 900, 1100, 11, NULL)
+INSERT INTO Inventario ([IdProducto], [IdProveedor], [Modelo], [Color], [Material], [Marca], [Talla], [PrecioCompra], [PrecioVenta], [CantidadExistente], [ImagenProducto]) VALUES (1009, 2, 110, N'Crema', N'Piel', N'Flexi', 10.5, 800, 1000, 15, NULL)
+
+INSERT INTO Proveedores ([idProvedor], [Nombre], [RFC], [Folio], [Direccion]) VALUES (1, N'ANDREA', N'AQA250502MU3', N'00001', N'Cerro del Fraile #1205')
+INSERT INTO Proveedores ([idProvedor], [Nombre], [RFC], [Folio], [Direccion]) VALUES (2, N'EREZ', N'RUPE250502B74', N'00002', N'Tepeyac #615')
+INSERT INTO Proveedores ([idProvedor], [Nombre], [RFC], [Folio], [Direccion]) VALUES (3, N'converses', N'SADFG4654EWR', N'00006', N'POR HYA')
+INSERT INTO Proveedores ([idProvedor], [Nombre], [RFC], [Folio], [Direccion]) VALUES (4, N'Nike', N'GDSGF456ER42', N'01026', N'SAN ISIDRO')
+INSERT INTO Proveedores ([idProvedor], [Nombre], [RFC], [Folio], [Direccion]) VALUES (5, N'Irwing Aaron', N'IATV050HNLL', N'20', N'Pino 301')
+INSERT INTO Proveedores ([idProvedor], [Nombre], [RFC], [Folio], [Direccion]) VALUES (6, N'Adidas', N'sadf46wq', N'108900', N'lomas de la pas')
+INSERT INTO Proveedores ([idProvedor], [Nombre], [RFC], [Folio], [Direccion]) VALUES (7, N'Pirma', N'AS055HJJ', N'0000502', N'Correccional de menores #50')
+INSERT INTO Proveedores ([idProvedor], [Nombre], [RFC], [Folio], [Direccion]) VALUES (8, N'Elirwing', N'sadfg54t1ua', N'000010', N'Macroplaza #1111')
+INSERT INTO Proveedores ([idProvedor], [Nombre], [RFC], [Folio], [Direccion]) VALUES (9, N'Vegeta', N'ASDASD565645', N'00000050', N'España #777')
+INSERT INTO Proveedores ([idProvedor], [Nombre], [RFC], [Folio], [Direccion]) VALUES (10, N'LaRosa', N'ADJASDHA4564', N'00007', N'Cerro de la Silla #5555')
+
+INSERT INTO SistemaApartado ([idApartado], [idCliente], [Precio], [Enganche], [Debe]) VALUES (2, 1001, 111, 1, 50)
+INSERT INTO SistemaApartado ([idApartado], [idCliente], [Precio], [Enganche], [Debe]) VALUES (3, 1001, 812, 1, 11)
+INSERT INTO SistemaApartado ([idApartado], [idCliente], [Precio], [Enganche], [Debe]) VALUES (4, 1001, 406, 1, 403)
+INSERT INTO SistemaApartado ([idApartado], [idCliente], [Precio], [Enganche], [Debe]) VALUES (5, 1002, 986, 1, 885)
+INSERT INTO SistemaApartado ([idApartado], [idCliente], [Precio], [Enganche], [Debe]) VALUES (6, 1003, 999, 1, 0114)
+INSERT INTO SistemaApartado ([idApartado], [idCliente], [Precio], [Enganche], [Debe]) VALUES (7, 1004, 50, 1, 505)
+INSERT INTO SistemaApartado ([idApartado], [idCliente], [Precio], [Enganche], [Debe]) VALUES (8, 1008, 123, 1, 120)
+INSERT INTO SistemaApartado ([idApartado], [idCliente], [Precio], [Enganche], [Debe]) VALUES (9, 1007, 5050, 1, 700)
+INSERT INTO SistemaApartado ([idApartado], [idCliente], [Precio], [Enganche], [Debe]) VALUES (10, 1009, 606, 1, 600)
+INSERT INTO SistemaApartado ([idApartado], [idCliente], [Precio], [Enganche], [Debe]) VALUES (11, 1005, 30, 1, 405)
+
+update Inventario
+set Modelo = '1666163', Color='Azul', Material='Vaquita Marina', Marca ='DeforestacionMundial', Talla = 5.5
+Where Inventario.IdProveedor = 10
+
+update ApartadosM
+set IdProducto=1009
+Where ApartadosM.Cantidad = 5
+
+update Cliente
+set ApPaterno = 'Bellamy'
+Where Cliente.idCliente = 1000
+
+update Proveedores
+set Nombre= 'Primero'
+Where Proveedores.Folio = 00001
+
+update SistemaApartado
+set Precio = 0
+Where SistemaApartado.idCliente = 1001
+
+delete from Inventario
+where Inventario.IdProducto = 1003
+
+delete from ApartadosM
+where ApartadosM.idApartado = 2
+
+delete from Cliente 
+where Cliente.idCliente = 1004
+
+delete from Proveedores
+where Proveedores.Nombre = 'Adidas'
+
+delete from SistemaApartado
+where SistemaApartado.idCliente = 1003
