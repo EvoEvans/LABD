@@ -1,0 +1,91 @@
+
+------------------------------------------------------
+create view ObtenerMarcaa As
+select DISTINCT Marca  from Inventario
+where Marca is not null;
+---------------------------------------------------
+
+create view ReporteGeneral AS
+SELECT 
+	Venta.idVenta,
+	Inventario.Modelo,
+	Inventario.Marca,
+	Inventario.PrecioVenta as Precio,
+	ProductosM.Cantidad,
+	Empleado.Nombre + ' ' + Empleado.ApPaterno as Cobro
+	FROM Venta
+	join 
+		ProductosM
+	on
+		Venta.idVenta = ProductosM.idVenta
+	join
+		Inventario
+	on
+		ProductosM.idProducto = Inventario.IdProducto
+	join
+		Empleado
+	on
+		Venta.idEmpleado = Empleado.idEmpleado;
+
+		
+		
+----------------------------------------------------------------	
+create view EmpleadoVenta as
+select 
+
+Empleado.IdEmpleado,
+Empleado.Nombre,
+Empleado.ApPaterno,
+Empleado.ApMaterno,
+Empleado.Usuario,
+Venta.Total
+
+From Empleado
+
+LEFT JOIN Venta 
+
+on Empleado.idEmpleado = Venta.idVenta;
+
+
+------------------------------------------------
+create view DescripcionPApaM as 
+select
+Inventario.Modelo,
+Inventario.Marca,
+Inventario.Color,
+Inventario.Talla,
+ApartadosM.Cantidad,
+Inventario.PrecioVenta as Subtotal
+from ApartadosM
+join
+Inventario
+on
+Inventario.idProducto = ApartadosM.idProducto;
+-----------------------------------------------------
+create view ApCliente as 
+select 
+sum(IdApartado) as SumaApartado,
+Cliente.Nombre
+
+From SistemaApartado
+
+join Cliente 
+on SistemaApartado.idCliente = Cliente.idCliente
+
+group by Nombre;
+------------------------------------------------------
+create view Vista as 
+select 
+Empleado.Nombre,
+Count(Venta.idVenta) as numeroventas
+from Venta
+join Empleado 
+on Venta.idEmpleado = Empleado.idEmpleado
+group by Nombre
+having count(Venta.idVenta) > 1;
+------------------------------------------------------
+select
+idVenta 
+from Venta
+where Pago > 50
+(Select IdProducto from Inventario where PrecioVenta > 50)
